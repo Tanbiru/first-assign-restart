@@ -29,323 +29,268 @@
 </head>
 <body>
 
-    <!-- Header Section -->
+   
+<!-- Header Section -->
     <header class="">
         <div class="navbar bg-base-100 w-10/12 mx-auto ">
-  <div class="navbar-start">
-    <a class="font-bold text-xl text-indigo-500">SwiftCart</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      
-      <li>
-        <li><a>Home</a></li>
-        <li>
-          <a>Product</a>
-        </li>
-        <li>
-            <a>About</a>
-        </li>
-        <li>
-            <a>Contact</a>
-        </li>
-      </li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="bg-white"><i class="fa-solid fa-cart-shopping"></i></a>
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 ">
-        <li><a>Home</a></li>
-        <li>
-          <a>Product</a>
-        </li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+            <div class="navbar-start">
+                <a class="font-bold text-2xl text-indigo-500">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a id="homeBtn" class="cursor-pointer">Home</a></li>
+                    <li><a id="productBtn" class="cursor-pointer">Products</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="bg-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> 
+                        </svg>
+                    </div>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2">
+                        <li><a id="mobileHomeBtn" class="cursor-pointer">Home</a></li>
+                        <li><a id="mobileProductBtn" class="cursor-pointer">Products</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-       <!-- banner section -->
-
-        <section class="bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/Assets/banner-image.png')] bg-cover bg-center  h-[30vh] md:h-[50vh] lg:h-[60vh]">
+        <!-- Banner Section -->
+        <section id="bannerSection" class="bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/Assets/banner-image.png')] bg-cover bg-center h-[30vh] md:h-[50vh] lg:h-[60vh]">
             <div class="w-10/12 mx-auto py-20 md:py-40">
-
-            
-            <h2 class="text-2xl md:text-4xl pb-5 text-white font-bold">Best collection For you</h2>
-<p class="text-xs md:text-sm pb-6 text-white">Discover the latest trends in fashion, electronics, and more. Shop with confidence and style at swiftCart</p>
-
-            <button class="btn btn-active btn-primary">Shop Now</button>
-        </div>
+                <h2 class="text-2xl md:text-4xl pb-5 text-white font-bold">Best collection For you</h2>
+                <p class="text-xs md:text-sm pb-6 text-white">Discover the latest trends in fashion, electronics, and more. Shop with confidence and style at swiftCart</p>
+                <button class="btn btn-active btn-primary">Shop Now</button>
+            </div>
         </section>
-
     </header>
-  
-    <!-- Main section -->
+
+    <!-- Main Section -->
     <main>
+      
+        <div id="homeSection">
+            <!-- Box section -->
+            <section class="pt-15 pb-15 bg-gray-100">
+                <div class="content text-center ">
+                    <h2 class="text-4xl text-black font-bold mb-8">Why choose us</h2>
+                    <p class="text-gray-600">We provide the best shopping experience with top-notch services</p>
+                </div>
 
-        <!-- Box Section -->
+                <div class="flex flex-col md:flex-row gap-5 w-10/12 mx-auto mt-20 ">
+                    <div class="space-y-4 shadow-sm p-5">
+                        <i class="text-blue-700 text-2xl fa-solid fa-truck"></i>
+                        <h3 class="font-bold ">Fast Delivery</h3>
+                        <p class="text-gray-600 text-sm">Get your orders delivered to your doorstep quickly and efficiently.</p>
+                    </div>
+                    <div class="space-y-4 shadow-sm p-5">
+                        <i class="text-blue-700 text-2xl fa-solid fa-headphones"></i>
+                        <h3 class="font-bold ">24/7 Support</h3>
+                        <p class="text-gray-600 text-sm">Our support team is available around the clock to assist you.</p>
+                    </div>
+                    <div class="space-y-4 shadow-sm p-5">
+                        <i class="text-blue-700 text-2xl fa-solid fa-shield"></i>
+                        <h3 class="font-bold ">Secure payment</h3>
+                        <p class="text-gray-600 text-sm">Experience safe and secure transaction with our encrypted payment systems.</p>
+                    </div>
+                    <div class="space-y-4 shadow-sm p-5">
+                        <i class="text-blue-700 text-2xl fa-solid fa-arrow-rotate-left"></i>
+                        <h3 class="font-bold ">Easy Returns</h3>
+                        <p class="text-gray-600 text-sm">Not satisfied? Return your products easily within 30 days.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="pt-15 pb-15 bg-gray-100">
+            <!-- Trending Section -->
+            <section class="w-10/12 mx-auto py-16">
+                <h2 class="font-bold text-4xl mb-12">Trending Now</h2>
+                <div class="grid md:grid-cols-3 gap-8">
 
-            <div class="content text-center ">
-                <h2 class="text-4xl text-black font-bold mb-8">Why choose us</h2>
-                <p class="text-gray-600">We provide the best shopping experience with top-notch services</p>
-            </div>
-             
-            <!-- Box -->
-            <div class="flex flex-col md:flex-row gap-5 w-10/12 mx-auto mt-20 ">
 
-            <div class="space-y-4 shadow-sm p-5">
-                <i class="text-blue-700 text-2xl fa-regular fa-truck"></i>
-                <h3 class="font-bold ">Fast Delivery</h3>
-                <p class="text-gray-600 text-sm">Get your orders delivered to your doorstep quickly and efficiently.</p>
+                    <!-- Card 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300">
+                        <div class="bg-gray-200 flex justify-center items-center h-64">
+                            <img class="h-48" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="">
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <p class="text-blue-600 bg-blue-100 rounded-full px-3 py-1 text-xs font-medium">Men's Clothing</p>
+                                <div class="flex items-center gap-1 text-sm">
+                                    <i class="text-amber-400 fa-solid fa-star"></i>
+                                    <span class="text-gray-500">3.9 (120)</span>
+                                </div>
+                            </div>
+                            <p class="font-medium text-gray-800">Fjallraven - Foldsack No. 1 Backpack</p>
+                            <h4 class="font-bold text-lg">$109.95</h4>
+                            <div class="flex gap-4 pt-2">
+                                <button class="flex-1 btn border border-gray-300 rounded-lg py-2 text-sm hover:bg-gray-100 transition">
+                                    <i class="fa-regular fa-eye mr-1"></i> Details
+                                </button>
+                                <button class="flex-1 btn bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
+                                    <i class="fa-solid fa-cart-shopping mr-1"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-            <div class="space-y-4 shadow-sm p-5">
-                <i class="text-blue-700 text-2xl fa-regular fa-headphones"></i>
-                <h3 class="font-bold ">23/7 Support</h3>
-                <p class="text-gray-600 text-sm">Our support team is available around the clock to assist you.</p>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300">
+                        <div class="bg-gray-200 flex justify-center items-center h-64">
+                            <img class="h-48" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png" alt="">
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <p class="text-blue-600 bg-blue-100 rounded-full px-3 py-1 text-xs font-medium">Men's Clothing</p>
+                                <div class="flex items-center gap-1 text-sm">
+                                    <i class="text-amber-400 fa-solid fa-star"></i>
+                                    <span class="text-gray-500">4.1 (259)</span>
+                                </div>
+                            </div>
+                            <p class="font-medium text-gray-800">Mens Casual Premium Slim Fit T-Shirts</p>
+                            <h4 class="font-bold text-lg">$22.30</h4>
+                            <div class="flex gap-4 pt-2">
+                                <button class="flex-1 btn border border-gray-300 rounded-lg py-2 text-sm hover:bg-gray-100 transition">
+                                    <i class="fa-regular fa-eye mr-1"></i> Details
+                                </button>
+                                <button class="flex-1 btn bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
+                                    <i class="fa-solid fa-cart-shopping mr-1"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-            <div class="space-y-4 shadow-sm p-5">
-                <i class="text-blue-700 text-2xl fa-solid fa-shield"></i>
-                <h3 class="font-bold ">Secure payment</h3>
-                <p class="text-gray-600 text-sm">Experience safe and secure transaction with our encrypted payment systems.</p>
-
-            </div>
-            <div class="space-y-4 shadow-sm p-5">
-               <i class="text-blue-700 text-2xl fa-solid fa-arrow-rotate-left"></i>
-                <h3 class="font-bold ">Easy Returns</h3>
-                <p class="text-gray-600 text-sm">Not satisfied? Return your products easily within 30 days.</p>
-
-            </div>
-            </div>
-        </section>
-
-        <!-- Trending section -->
-
-         <section class="w-10/12 mx-auto py-16">
-  <h2 class="font-bold text-4xl mb-12">Trending Now</h2>
-
-  <div class="grid md:grid-cols-3 gap-8">
-
-    <!-- Card 1 -->
-    <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300">
-
-      <div class="bg-gray-200 flex justify-center items-center h-64">
-        <img class="h-48" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="">
-      </div>
-
-      <div class="p-6 space-y-4">
-
-        <div class="flex items-center justify-between">
-          <p class="text-blue-600 bg-blue-100 rounded-full px-3 py-1 text-xs font-medium">
-            Men's Clothing
-          </p>
-
-          <div class="flex items-center gap-1 text-sm">
-            <i class="text-amber-400 fa-solid fa-star"></i>
-            <span class="text-gray-500">3.9 (120)</span>
-          </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300">
+                        <div class="bg-gray-200 flex justify-center items-center h-64">
+                            <img class="h-48" src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png" alt="">
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <p class="text-blue-600 bg-blue-100 rounded-full px-3 py-1 text-xs font-medium">Men's Clothing</p>
+                                <div class="flex items-center gap-1 text-sm">
+                                    <i class="text-amber-400 fa-solid fa-star"></i>
+                                    <span class="text-gray-500">4.7 (500)</span>
+                                </div>
+                            </div>
+                            <p class="font-medium text-gray-800">Men's Cotton Jacket</p>
+                            <h4 class="font-bold text-lg">$55.99</h4>
+                            <div class="flex gap-4 pt-2">
+                                <button class="flex-1 btn border border-gray-300 rounded-lg py-2 text-sm hover:bg-gray-100 transition">
+                                    <i class="fa-regular fa-eye mr-1"></i> Details
+                                </button>
+                                <button class="flex-1 btn bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
+                                    <i class="fa-solid fa-cart-shopping mr-1"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <p class="font-medium text-gray-800">
-          Fjallraven - Foldsack No. 1 Backpack
-        </p>
-
-        <h4 class="font-bold text-lg">$109.95</h4>
-
-        <div class="flex gap-4 pt-2">
-          <button class="flex-1 btn border border-gray-300 rounded-lg py-2 text-sm hover:bg-gray-100 transition">
-            <i class="fa-regular fa-eye mr-1"></i> Details
-          </button>
-
-          <button class="flex-1 btn bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
-            <i class="fa-solid fa-cart-shopping mr-1"></i> Add
-          </button>
+        <!-- Products Section -->
+<div id="productSection" class="hidden">
+    <div class="w-10/12 mx-auto py-8">
+      
+        <h2 id="categoryTitle" class="text-xl font-bold mb-6 text-center">Our Products</h2>  
+      
+        <div id="categoryContainer" class="flex flex-wrap gap-2 justify-center mb-8">  
+          
         </div>
-
-      </div>
+        
+        <div id="productGrid" class="grid md:grid-cols-3 gap-8">
+            
+        </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300">
-
-      <div class="bg-gray-200 flex justify-center items-center h-64">
-        <img class="h-48" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png" alt="">
-      </div>
-
-      <div class="p-6 space-y-4">
-
-        <div class="flex items-center justify-between">
-          <p class="text-blue-600 bg-blue-100 rounded-full px-3 py-1 text-xs font-medium">
-            Men's Clothing
-          </p>
-
-          <div class="flex items-center gap-1 text-sm">
-            <i class="text-amber-400 fa-solid fa-star"></i>
-            <span class="text-gray-500">4.1 (259)</span>
-          </div>
-        </div>
-
-        <p class="font-medium text-gray-800">
-          Mens Casual Premium Slim Fit T-Shirts
-        </p>
-
-        <h4 class="font-bold text-lg">$22.30</h4>
-
-        <div class="flex gap-4 pt-2">
-          <button class="flex-1 btn border border-gray-300 rounded-lg py-2 text-sm hover:bg-gray-100 transition">
-            <i class="fa-regular fa-eye mr-1"></i> Details
-          </button>
-
-          <button class="flex-1 btn bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
-            <i class="fa-solid fa-cart-shopping mr-1"></i> Add
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300">
-
-      <div class="bg-gray-200 flex justify-center items-center h-64">
-        <img class="h-48 " src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png" alt="">
-      </div>
-
-      <div class="p-6 space-y-4">
-
-        <div class="flex items-center justify-between">
-          <p class="text-blue-600 bg-blue-100 rounded-full px-3 py-1 text-xs font-medium">
-            Men's Clothing
-          </p>
-
-          <div class="flex items-center gap-1 text-sm">
-            <i class="text-amber-400 fa-solid fa-star"></i>
-            <span class="text-gray-500">4.7 (500)</span>
-          </div>
-        </div>
-
-        <p class="font-medium text-gray-800">
-          Men's Cotton Jacket
-        </p>
-
-        <h4 class="font-bold text-lg">$55.99</h4>
-
-        <div class="flex gap-4 pt-2">
-          <button class="flex-1 btn border border-gray-300 rounded-lg py-2 text-sm hover:bg-gray-100 transition">
-            <i class="fa-regular fa-eye mr-1"></i> Details
-          </button>
-
-          <button class="flex-1 btn bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
-            <i class="fa-solid fa-cart-shopping mr-1"></i> Add
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
- 
+</div>
     </main>
 
-        <!-- Footer section -->
 
-        <footer class="bg-gradient-to-r from-[#1f2937] to-[#111827] py-16">
-        <section class="w-10/12 mx-auto  flex justify-between flex-col md:flex-row gap-10">
+    <!-- Modal section -->
+
+<dialog id="productModal" class="modal modal-middle">
+  <div class="modal-box bg-white p-6">
+    
+   
+    <div id="modalContent" class="max-h-[80vh] overflow-y-auto">
+    </div>
+    
+    <div class="mt-4 text-right">
+      <form method="dialog">
+      
+      </form>
+    </div>
+    
+  </div>
+  
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-r from-[#1f2937] to-[#111827] py-16">
+        <section class="w-10/12 mx-auto flex justify-between flex-col md:flex-row gap-10">
             <div class="space-y-5">
                 <h3 class="text-xl text-indigo-400 font-bold">SwiftCart</h3>
                 <p class="text-sm text-gray-300">Your one shop for all your fashion and lifestyle needs. <br>Quality products,fast delivery, and excellent support</p>
             </div>
             <div class="space-y-5 flex flex-col">
-                <h4 class="text-sm font-semibold text-gray-300 ">QUICK LINKS</h4>
+                <h4 class="text-sm font-semibold text-gray-300">QUICK LINKS</h4>
                 <a class="text-sm text-gray-300" href="">Home</a>
-                <a class="text-sm text-gray-300" href="">products</a>
+                <a class="text-sm text-gray-300" href="">Products</a>
                 <a class="text-sm text-gray-300" href="">About</a>
                 <a class="text-sm text-gray-300" href="">Contact</a>
-
             </div>
-
             <div class="flex flex-col space-y-5">
                 <a class="text-sm text-gray-300" href="">SUPPORT</a>
                 <a class="text-sm text-gray-300" href="">FAQ</a>
                 <a class="text-sm text-gray-300" href="">Shipping</a>
                 <a class="text-sm text-gray-300" href="">Returns</a>
                 <a class="text-sm text-gray-300" href="">Privacy Policy</a>
-            </div> 
-
+            </div>
             <div class="space-y-5">
                 <p class="text-sm text-gray-300">SUBSCRIBE TO OUR NEWSLETTER</p>
-                <P class="text-sm text-gray-300">The latest news,articles,and resources,sent to your inbox weekly.</P>
-
-               <div class="join gap-5">
-  <div>
-    <label class="input validator join-item">
-      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          stroke-width="2.5"
-          fill="none"
-          stroke="currentColor"
-        >
-          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-        </g>
-      </svg>
-      <input type="email" placeholder="Enter your email" required />
-    </label>
-    <div class="validator-hint hidden">Enter valid email address</div>
-  </div>
-  <button class="btn btn-neutral bg-indigo-600 join-item">SUBSCRIBE</button>
-</div>
+                <p class="text-sm text-gray-300">The latest news,articles,and resources,sent to your inbox weekly.</p>
+                <div class="join gap-5">
+                    <div>
+                        <label class="input validator join-item">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </g>
+                            </svg>
+                            <input type="email" placeholder="Enter your email" required />
+                        </label>
+                        <div class="validator-hint hidden">Enter valid email address</div>
+                    </div>
+                    <button class="btn btn-neutral bg-indigo-600 join-item">SUBSCRIBE</button>
+                </div>
             </div>
-
-
-            
-
         </section>
-       
-<div class="w-10/12 mx-auto mt-6 flex flex-col-reverse md:flex-row justify-between items-center text-sm text-gray-400">
-  
 
-  <p>&copy; 2026 SwiftCart, Inc. All rights reserved.</p>
+        <div class="w-10/12 mx-auto mt-6 flex flex-col-reverse md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>&copy; 2026 SwiftCart, Inc. All rights reserved.</p>
+            <div class="flex gap-5 text-gray-400">
+                <a href="" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" class="hover:text-white"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
- 
-  <div class="flex gap-5 text-gray-400">
-    <a href="" class="hover:text-white">
-      <i class="fa-brands fa-facebook-f"></i>
-    </a>
-    <a href="" class="hover:text-white">
-      <i class="fa-brands fa-twitter"></i>
-    </a>
-    <a href="" class="hover:text-white">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="" class="hover:text-white">
-      <i class="fa-brands fa-linkedin-in"></i>
-    </a>
-    <a href="" class="hover:text-white">
-      <i class="fa-regular fa-envelope"></i>
-    </a>
-  </div>
-
-</div>
-
-
-
-
-        </footer>
-
+        <script src="/index.js"></script>
     
 </body>
 </html>
